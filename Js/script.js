@@ -38,7 +38,7 @@ let products = [
 
 let productsContainer = document.getElementById("products-container");
 
-for (let product of products) {
+let productElements = products.map(function (product) {
   let productColumn = document.createElement("div");
 
   productColumn.className = "col-12 col-sm-6 col-lg-4";
@@ -83,5 +83,9 @@ for (let product of products) {
 
   productColumn.append(productCard);
 
-  productsContainer.append(productColumn);
-}
+  return productColumn;
+});
+
+productElements.forEach(function (productElement) {
+  productsContainer.append(productElement);
+});
