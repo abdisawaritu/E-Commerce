@@ -83,6 +83,10 @@ let productElements = products.map(function (product) {
 
   productColumn.append(productCard);
 
+  productCard.addEventListener("click", function () {
+    productCard.classList.toggle("selected");
+  });
+
   return productColumn;
 });
 
