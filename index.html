@@ -17,93 +17,89 @@
 
   <body>
     <header class="site-header">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a href="#" class="navbar-brand"> E-Commerce Store </a>
 
-      <a href="#" class="navbar-brand">
-        E-Commerce Store
-      </a>
+          <div class="header-actions">
+            <button
+              id="cart-button"
+              class="cart-button"
+              type="button"
+              aria-label="Shopping cart"
+            >
+              <span class="cart-icon"> 🛒 </span>
 
-      <div class="header-actions">
+              <span class="cart-text"> Cart </span>
 
-        <button
-          id="cart-button"
-          class="cart-button"
-          type="button"
-          aria-label="Shopping cart"
-        >
-          <span class="cart-icon">🛒</span>
+              <span id="cart-count" class="cart-count"> 0 </span>
+            </button>
 
-          <span class="cart-text">
-            Cart
-          </span>
+            <button
+              id="menu-toggle"
+              class="menu-toggle"
+              type="button"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
 
-          <span
-            id="cart-count"
-            class="cart-count"
-          >
-            0
-          </span>
-        </button>
+          <div id="navigation-menu" class="navigation-menu">
+            <a href="#" class="nav-link"> Home </a>
 
-        <button
-          id="menu-toggle"
-          class="menu-toggle"
-          type="button"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+            <a href="#products" class="nav-link"> Products </a>
 
+            <a href="#" class="nav-link"> About </a>
+
+            <a href="#" class="nav-link"> Contact </a>
+          </div>
+        </nav>
       </div>
-
-      <div
-        id="navigation-menu"
-        class="navigation-menu"
-      >
-        <a href="#" class="nav-link">
-          Home
-        </a>
-
-        <a href="#products" class="nav-link">
-          Products
-        </a>
-
-        <a href="#" class="nav-link">
-          About
-        </a>
-
-        <a href="#" class="nav-link">
-          Contact
-        </a>
-      </div>
-
-    </nav>
-  </div>
-</header>
+    </header>
 
     <main>
-      <section id="products" class="py-5">
+      <section id="products" class="products-section">
         <div class="container">
           <div class="text-center mb-5">
-            <h1 class="fw-bold">Our Products</h1>
+            <h1>Our Products</h1>
 
-            <p class="text-muted">Explore our latest products</p>
+            <p>Explore our latest products.</p>
           </div>
 
           <div id="products-container" class="row g-4"></div>
         </div>
       </section>
-    </main>
 
-    <footer class="border-top py-4">
-      <div class="container text-center">
-        <p class="mb-0">&copy; 2026 E-Commerce Store. All rights reserved.</p>
-      </div>
-    </footer>
+      <!-- CART SECTION -->
+
+      <section id="cart-section" class="cart-section d-none">
+        <div class="container">
+          <div class="cart-box">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h2>Shopping Cart</h2>
+
+              <button
+                id="close-cart"
+                class="btn btn-outline-secondary"
+                type="button"
+              >
+                Close
+              </button>
+            </div>
+
+            <div id="cart-container"></div>
+
+            <div class="cart-summary">
+              <h3>Total: $<span id="cart-total">0</span></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="./js/script.js"></script>
   </body>
