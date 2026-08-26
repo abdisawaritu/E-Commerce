@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>E-Commerce Store</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="border-bottom">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#"> E-Commerce </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="products" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h1 class="fw-bold">Our Products</h1>
+
+            <p class="text-muted">Explore our latest products</p>
+          </div>
+
+          <div id="products-container" class="row g-4"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-top py-4">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2026 E-Commerce Store. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
