@@ -36,4 +36,7 @@ let products = [
   },
 ];
 
+let productsContainer = document.getElementById("products-container");
+
 console.log(products);
+console.log(productsContainer);
